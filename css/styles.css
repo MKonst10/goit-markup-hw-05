@@ -512,10 +512,20 @@ button {
   margin-right: 80px;
 }
 
-.footer-subscribe {
+.subscribe-footer {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-subscribe-form {
   display: flex;
   align-items: end;
 }
+
 .subscribe-email {
   display: flex;
   flex-direction: column;
