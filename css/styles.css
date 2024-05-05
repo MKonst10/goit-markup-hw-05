@@ -658,8 +658,6 @@ button {
 }
 
 .modal-inputs {
-  display: flex;
-  justify-content: center;
 }
 
 .form-field-label {
@@ -683,6 +681,13 @@ button {
 .form-field-input:focus {
   border: 1px solid #4d5ae5;
   outline: transparent;
+}
+
+.modal-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 24px;
 }
 
 .modal-form-field {
