@@ -512,6 +512,10 @@ button {
   margin-right: 80px;
 }
 
+.footer-send-icon {
+  margin-left: 16px;
+}
+
 .subscribe-footer {
   margin-bottom: 16px;
   font-weight: 500;
@@ -566,7 +570,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
   width: 165px;
@@ -593,7 +596,8 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: ;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -635,6 +639,8 @@ button {
 .modal-close-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 8px;
+  height: 8px;
 }
 
 .modal-close-button:hover,
@@ -655,9 +661,6 @@ button {
   text-align: center;
   color: #2e2f42;
   margin: 72px 24px 16px;
-}
-
-.modal-inputs {
 }
 
 .form-field-label {
@@ -798,7 +801,4 @@ button {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
-}
-
-.form-field-custom-icon {
 }
