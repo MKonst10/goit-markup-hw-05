@@ -617,6 +617,7 @@ button {
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button {
@@ -639,8 +640,6 @@ button {
 .modal-close-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 8px;
-  height: 8px;
 }
 
 .modal-close-button:hover,
@@ -660,13 +659,13 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin: 72px 24px 16px;
+  margin: 72px 24px 24px 24px;
 }
 
 .form-field-label {
   display: block;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -678,11 +677,13 @@ button {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .form-field-input:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
   outline: transparent;
 }
 
@@ -701,9 +702,9 @@ button {
   fill: #2e2f42;
   position: absolute;
   top: 50%;
-  left: 19px;
+  left: 16px;
   transform: translateY(-50%);
-  transition: fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-input:focus + .form-field-icon {
@@ -721,6 +722,7 @@ button {
   border-radius: 4px;
   padding: 8px 16px;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-comment::placeholder {
@@ -731,7 +733,7 @@ button {
 }
 
 .form-field-comment:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
   outline: transparent;
 }
 
