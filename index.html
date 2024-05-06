@@ -505,7 +505,7 @@
     </footer>
 
     <!-----------------------------BACKDROP/MODAL------------------------------->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-button">
           <svg class="modal-close-icon" width="8px" height="8px">
@@ -561,7 +561,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-field">
+          <div class="modal-textarea-field">
             <label class="form-field-label" for="user-comment">Comment</label>
             <textarea
               class="form-field-comment"
@@ -574,12 +574,12 @@
             <input
               class="form-field-checkbox visually-hidden"
               type="checkbox"
-              name="user-checkbox"
-              id="user-checkbox"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="form-field-comment-label" for="user-checkbox">
+            <label class="form-field-comment-label" for="user-privacy">
               <span class="form-field-custom-checkbox">
                 <svg class="form-field-custom-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-arrow"></use>
@@ -588,9 +588,7 @@
               <a href="" class="privacy-policy-link">Privacy Policy</a></label
             >
           </div>
-          <div class="modal-button">
-            <button type="submit" class="form-send-button">Send</button>
-          </div>
+          <button type="submit" class="form-send-button">Send</button>
         </form>
       </div>
     </div>
